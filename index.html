@@ -1,91 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>j.s condicionales</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,300&family=Raleway&family=Roboto:ital,wght@0,300;0,400;0,500;1,100&display=swap"
-        rel="stylesheet">
+    <title>Todo List</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-    <nav>
-        <img id="portada" src="assets\img\cup.png" alt="portada">
-    </nav>
-
-
-    <article class="maximo">
-        <h1>Puedes llevar un máximo de 10 stickers</h1>
+    <section id="container">
+        <h1>Todo List</h1>
+        <hr>
+        <h4>Nueva Tarea</h4>
+          <input id="inputTarea">
+        <button id="agregar">Agregar</button> 
+        <article class="ideando">
+        <h2>Id:</h2>
+        <h2>Tareas:</h2>       
     </article>
-    <aside class="grid-container">
-        <article class="stickers">
-            <img src="assets\img\cocinera.jpeg" class="sticker" alt="pastelera" />
-            <input class="cantidad" type="text" id="sticker1" />
-        </article>
-        <article class="stickers">
-            <img src="assets\img\papa.png" class="sticker" alt="papita" />
-            <input class="cantidad" type="text" id="sticker2" />
-        </article>
-        <article class="stickers">
-            <img src="assets\img\cupcake.jpeg" class="sticker" alt="cupcake" />
-            <input class="cantidad" type="text" id="sticker3" />
-        </article>
-    </aside>
-    <div class="btn">
-        <button><strong>Comprar</strong></button>
-        <p id="totalSticker"><strong></strong></p>
-    </div>
-
-    <section>
-        <h4>Ingresa tu password secreto</h4>
-        <select id="digito1" required>
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-        </select>
-        <select id="digito2" required>
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-        </select>
-        <select id="digito3" required>
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-        </select>
-        <div>
-            <button type="button" id="ingresar">Ingresar</button>
-            <p id="texto"><strong></strong></p>
+        <div id="lista"> 
         </div>
+    <hr>
+        <article id="workHome">
+           <h4>Tareas: <span id="suma"></span></h4>
+        <h4>Realizadas: <span id="realizadas"></span></h4> 
+        </article>
     </section>
-
-    <script src="assets/js/java.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
-
 </html>
